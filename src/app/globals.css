@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0b1f33;
+  --color-navy-light: #14263c;
+  --color-gold: #c9a45b;
+  --color-ivory: #f5f2ea;
+  --color-slate: #70757a;
+  --color-charcoal: #1b1b1b;
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #0b1f33;
+}
+
+body {
+  background: #0b1f33;
+  color: #f5f2ea;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #c9a45b;
+  color: #0b1f33;
+}
+
+@keyframes beam {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
+}
+
+@keyframes beam-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-beam {
+  animation: beam 6s ease-in-out infinite;
+}
+
+.animate-beam-pulse {
+  animation: beam-pulse 4s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.animate-delay-600 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.animate-delay-800 {
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.light-beam {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 140%;
+  background: linear-gradient(
+    to bottom,
+    rgba(201, 164, 91, 0.6),
+    rgba(201, 164, 91, 0.25) 30%,
+    rgba(201, 164, 91, 0.05) 60%,
+    transparent
+  );
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.light-beam-wide {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 140%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.15),
+    rgba(201, 164, 91, 0.08) 40%,
+    transparent
+  );
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(11, 31, 51, 0.7) 100%);
+  pointer-events: none;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(201, 164, 91, 0.3) 20%,
+    rgba(201, 164, 91, 0.3) 80%,
+    transparent
+  );
+}
