@@ -29,8 +29,8 @@ export function Hero() {
         </h1>
 
         <p className="text-slate text-base sm:text-lg max-w-xl leading-relaxed animate-fade-up animate-delay-400">
-          A Philippine publication dedicated to meaningful conversations.
-          Context over headlines. Perspective over noise.
+          Independent perspectives on Philippine news, politics, and public affairs.
+          Seeking truth. Questioning power. Encouraging informed opinions.
         </p>
       </div>
 
@@ -43,3 +43,5 @@ export function Hero() {
     </section>
   );
 }
+
+

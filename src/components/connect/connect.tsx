@@ -1,5 +1,6 @@
 import { SectionDivider } from "@/components/ui/section-divider";
 import { EmailIcon, FacebookIcon } from "@/components/ui/icons";
+import { FB_PAGE_URL, CONTACT_EMAIL } from "@/components/constants";
 
 export function Connect() {
   return (
@@ -18,21 +19,24 @@ export function Connect() {
         </p>
 
         <p className="text-slate text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
-          Follow The Beacon for thoughtful discussions that help you understand
-          the world around you &mdash; with context, not clickbait.
+          Follow The Beacon for independent perspectives on Philippine news,
+          politics, and public affairs &mdash; seeking truth, questioning power,
+          and encouraging informed opinions.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a
-            href="mailto:plughubgadgets@gmail.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="inline-flex items-center gap-3 px-8 py-4 border border-gold/30 rounded-full text-gold hover:bg-gold/10 transition-colors text-sm tracking-wide"
           >
             <EmailIcon />
-            plughubgadgets@gmail.com
+            {CONTACT_EMAIL}
           </a>
 
           <a
-            href="https://www.facebook.com/profile.php?id=61592011270464"
+            href={FB_PAGE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 border border-gold/10 rounded-full text-slate hover:border-gold/30 hover:text-gold transition-colors text-sm tracking-wide"
           >
             <FacebookIcon />
@@ -45,10 +49,12 @@ export function Connect() {
             The Beacon
           </p>
           <p className="text-slate/40 text-xs">
-            &copy; {new Date().getFullYear()} &mdash; Guiding through the noise
+            &copy; {new Date().getFullYear()} The Beacon &mdash; Lapu-Lapu City &mdash; Guiding through the noise
           </p>
         </div>
       </div>
     </section>
   );
 }
+
+

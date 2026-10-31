@@ -18,9 +18,9 @@ export function Mission() {
                 The story behind the story.
               </p>
               <p>
-                The Beacon is a Philippine-based page focused on meaningful
-                conversations around current events, society, culture, history,
-                technology, and the people behind the headlines.
+                The Beacon is an independent Philippine publication focused on
+                news, politics, and public affairs. Seeking truth, questioning
+                power, and encouraging informed opinions.
               </p>
               <p>
                 We exist to help Filipinos understand why something matters
@@ -49,7 +49,7 @@ export function Mission() {
             <div className="mt-12 pt-8 border-t border-gold/10">
               <p className="text-slate text-sm leading-relaxed">
                 Calm. Intelligent. Respectful. Objective. <br />
-                A source of clarity in a noisy information landscape.
+                Based in Lapu-Lapu City &mdash; providing clarity across the Philippines.
               </p>
             </div>
           </div>
@@ -58,3 +58,5 @@ export function Mission() {
     </section>
   );
 }
+
+

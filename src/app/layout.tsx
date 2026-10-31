@@ -9,25 +9,39 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Beacon — Clarity in a Noisy World",
+  title: "The Beacon | Independent Perspectives on Philippine News, Politics & Public Affairs",
   description:
-    "A Philippine-based publication providing context, perspective, and thought-provoking discussions on current events, society, culture, and more.",
+    "Independent perspectives on Philippine news, politics, and public affairs. Seeking truth. Questioning power. Encouraging informed opinions. Rooted in Lapu-Lapu City, Cebu.",
   keywords: [
     "The Beacon",
     "Philippines",
+    "Philippine news",
+    "politics",
+    "public affairs",
+    "Lapu-Lapu City",
+    "Cebu",
+    "Visayas",
+    "budget transparency",
+    "investigative",
+    "due process",
+    "editorial",
     "current events",
     "context",
     "perspective",
-    "discussion",
-    "Cebu",
-    "news",
-    "editorial",
   ],
   openGraph: {
-    title: "The Beacon — Clarity in a Noisy World",
+    title: "The Beacon | Lapu-Lapu City",
     description:
-      "Guiding Filipinos through the noise with context, perspective, and thoughtful discussion.",
+      "Independent perspectives on Philippine news, politics, and public affairs. Seeking truth. Questioning power. Encouraging informed opinions.",
+    url: "https://thebeacon.plughubcore.com",
+    siteName: "The Beacon",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Beacon | Lapu-Lapu City",
+    description:
+      "Independent perspectives on Philippine news, politics, and public affairs. Seeking truth. Questioning power. Encouraging informed opinions.",
   },
 };
 
